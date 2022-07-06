@@ -14,15 +14,34 @@ class Servers with ChangeNotifier {
   Servers(this._encryptedBox);
 
   static const Map<String, List> _seeds = {
-    'peercoin': [
-      'wss://electrum.peercoinexplorer.net:50004',
-      'wss://allingas.peercoinexplorer.net:50004',
-    ],
-    'peercoinTestnet': [
-      'wss://testnet-electrum.peercoinexplorer.net:50009',
-      'wss://allingas.peercoinexplorer.net:50009',
-    ]
-  };
+  'sumcoin': [
+//     'wss://sum2.electrum-sum.org:50004',
+//     'ssl://sum3.electrum-sum.org:50002',
+    'ssl://sum2.electrum-sum.org:50002',
+//     'ssl://sum1.electrum-sum.org:50002',
+  ],
+  'sumcoincash': [
+    'wss://sumc2.electrum-sum.org:50004',
+    'wss://sumc4.electrum-sum.org:50004',
+  ],
+  'bitcoin': [
+    'ssl://electrumx-core.1209k.com:50002',
+//      'wss://tobe.determined:50009',
+  ],
+  'peercoin': [
+    'wss://electrum.peercoinexplorer.net:50004',
+    'wss://allingas.peercoinexplorer.net:50004',
+  ],
+  'litecoin': [
+    'wss://ltc.electrum-ltc.org:50004',
+    'wss://ltc.electrum-ltc.org:50004',
+  ],
+  'peercoinTestnet': [
+    'ssl://testnet-electrum.peercoinexplorer.net:50008',
+    'wss://testnet-electrum.peercoinexplorer.net:50009',
+    'wss://allingas.peercoinexplorer.net:50009',
+  ]
+};
 
   Future<void> init(String? coinIdentifier) async {
     LoggerWrapper.logInfo('Servers', 'init', 'init server provider');
