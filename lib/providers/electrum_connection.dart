@@ -20,9 +20,13 @@ enum ElectrumServerType { ssl, wss }
 
 class ElectrumConnection with ChangeNotifier {
   static const Map<String, double> _requiredProtocol = {
-    'peercoin': 1.4,
-    'peercoinTestnet': 1.4
-  };
+  'sumcoin': 1.4,
+  'sumcoincash': 1.4,
+  'litecoin': 1.4,
+  'bitcoin': 1.4,
+  'peercoin': 1.4,
+  'peercoinTestnet': 1.4
+};
 
   Timer? _pingTimer;
   Timer? _reconnectTimer;
