@@ -180,7 +180,7 @@ abstract class LightColors {
   static Color get black => const Color(0xFF000000);
   static Color get blackGreen => const Color(0xFF31493C);
   static Color get darkGreen => const Color(0xFF2A7A3A);
-  static Color get green => const Color(0xff3cb054);
+  static Color get green => const Color(0xff000000);
   static Color get lightGreen => const Color(0xffB3E5BD);
   static Color get grey => const Color(0xFF717C89);
   static Color get lightGrey => const Color(0x55717C89);
