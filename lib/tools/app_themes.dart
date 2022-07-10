@@ -19,7 +19,7 @@ class MyTheme {
         brightness: Brightness.light,
       ),
       backgroundColor: LightColors.white,
-      bottomAppBarColor: const Color(0x003cb054),
+      bottomAppBarColor: const Color(0x000164f5),
       cardColor: LightColors.white,
       dialogBackgroundColor: LightColors.white,
       disabledColor: LightColors.lightGreen,

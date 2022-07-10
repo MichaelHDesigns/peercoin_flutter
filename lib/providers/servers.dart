@@ -15,7 +15,7 @@ class Servers with ChangeNotifier {
 
   static const Map<String, List> _seeds = {
   'sumcoin': [
-//     'wss://sum2.electrum-sum.org:50004',
+     'wss://sum2.electrum-sum.org:50004',
 //     'ssl://sum3.electrum-sum.org:50002',
     'ssl://sum2.electrum-sum.org:50002',
 //     'ssl://sum1.electrum-sum.org:50002',

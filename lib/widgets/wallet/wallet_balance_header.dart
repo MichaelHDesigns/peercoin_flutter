@@ -40,7 +40,7 @@ class WalletBalanceHeader extends StatelessWidget {
                     Text(
                       '${_wallet.balance / _decimalProduct}',
                       style: TextStyle(
-                        fontSize: 24,
+                        fontSize: 20,
                         color: Colors.grey[100],
                         letterSpacing: 1.2,
                         fontWeight: FontWeight.bold,
@@ -52,8 +52,9 @@ class WalletBalanceHeader extends StatelessWidget {
                     Text(
                       _wallet.letterCode,
                       style: TextStyle(
-                        fontSize: 24,
+                        fontSize: 21,
                         color: Colors.grey[100],
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ],
@@ -68,7 +69,7 @@ class WalletBalanceHeader extends StatelessWidget {
                           _settings.exchangeRates,
                         ).toStringAsFixed(2)} ${_settings.selectedCurrency}',
                         style: TextStyle(
-                          fontSize: 12,
+                          fontSize: 14,
                           color: Colors.grey[200],
                           letterSpacing: 1.2,
                           fontWeight: FontWeight.bold,
