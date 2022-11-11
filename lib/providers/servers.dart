@@ -14,10 +14,10 @@ class Servers with ChangeNotifier {
   Servers(this._encryptedBox);
 
   static const Map<String, List> _seeds = {
-  'sumcoin': [
-     'wss://sum2.electrum-sum.org:50004',
+  'hthcoin': [
+     '161.35.101.221:65000',
 //     'ssl://sum3.electrum-sum.org:50002',
-    'ssl://sum2.electrum-sum.org:50002',
+    '161.35.101.221:65000',
 //     'ssl://sum1.electrum-sum.org:50002',
   ],
   'sumcoincash': [
