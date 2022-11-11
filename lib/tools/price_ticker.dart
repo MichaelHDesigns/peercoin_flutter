@@ -10,8 +10,8 @@ import 'logger_wrapper.dart';
 class PriceTicker {
   static Future<Map<String, dynamic>> getDataFromTicker() async {
     final client = RetryClient(http.Client());
-//    var url = Uri.parse('https://peercoinexplorer.net/price-ticker');
-    var url = Uri.parse('https://worker-ticker.totality.workers.dev');
+    var url = Uri.parse('https://api.coingecko.com/api/v3/coins/help-the-homeless-coin/tickers');
+//    var url = Uri.parse('https://api.coingecko.com/api/v3/coins/help-the-homeless-coin/tickers');
 
     try {
       var response = await client.read(url);
